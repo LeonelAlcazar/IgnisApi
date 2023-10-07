@@ -65,7 +65,7 @@ async function GetVIIRSData() {
 
 async function deleteCollection() {
   try {
-    const collectionRef = db.collection("firese");
+    const collectionRef = db.collection("fires");
     const querySnapshot = await collectionRef.get();
 
     // Delete each document in the collection
