@@ -4,12 +4,13 @@ import { db } from "./firebase";
 import { CronJob } from "cron";
 import express from "express";
 import twilio from "twilio";
+
+dotenv.config();
+
 const client = twilio(
   process.env.TWILIO_ACCOUNT_SID,
   process.env.TWILIO_AUTH_TOKEN
 );
-
-dotenv.config();
 
 type Fire = {
   latitude: number;
